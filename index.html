@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Logic Problems</title>
+    </head>
+    <body>
+        <h4>Squirrels and Cigars</h4>
+        <p>When squirrels get together for a party, they like to have cigars.
+           A squirrel party is successful when the number of cigars is between
+           40 and 60, inclusive - unless it is the weekend, in which case there
+           is no upper bound on the number of cigars.</p>
+        <p>What day is the party? (Choose from the list)</p>
+        <form>
+            <select id="daySelect">
+                <option value = "sunday">Sunday</option>
+                <option value = "monday">Monday</option>
+                <option value = "tuesday">Tuesday</option>
+                <option value = "wednesday">Wednesday</option>
+                <option value = "thursday">Thursday</option>
+                <option value = "friday">Friday</option>
+                <option value = "saturday">Saturday</option>
+            </select>
+        </form>
+        <p>How many cigars are present? (Enter a number between 1 and 99)</p>
+        <form>
+            <input type = "text"  id = "cigars"  name = "cigarNum"  maxlength="2"></input>
+        </form>
+        <br>
+        <button onclick="check()">Successful?</button>
+        <h4 id="partyStatus">...</h4>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
